@@ -5,27 +5,15 @@ $textGray: #333333;
 
 body {
     font-family: 'Barlow', sans-serif !important;
-    position: relative;
     font-size: 16px;
 }
 
 .navbar-expand {
     height: 72px;
-    background-color: #fff;
-
-    .logo {
-        height: 30px;
-    }
-
-
+    background-color: rgb(97, 34, 34);
 
 }
 
-@media only screen and(max-width: 400px) {
-    .navbar-expand {
-        height: 50px !important;
-    }
-}
 
 @media only screen and(max-width: 1024px) {
     .navbar-expand {
@@ -35,35 +23,11 @@ body {
     }
 }
 
+// banner
 .banner {
-    display: flex;
-    position: relative;
-
-    .banner-title {
-        width: 568px;
-        height: 135px;
-        /* Display/Desktop */
-
-        font-style: normal;
-        font-weight: 600;
-        font-size: 56px;
-        line-height: 67px;
-
-        display: flex;
-        align-items: center !important;
-        letter-spacing: -1.2px;
-    }
-
-
-
-    .pharmacy {
-        display: flex;
-        position: absolute !important;
-        right: 140px !important;
-        top: 560px !important;
-    }
-
+    display: block;
 }
+
 
 // default
 a {
@@ -89,7 +53,7 @@ img {
 }
 
 .hoi-chuyen-gia {
-    margin-top: 60px;
+    margin-top: 20px;
 
     .card-title {
         font-size: 19px;
@@ -101,6 +65,7 @@ img {
 
     .card-text {
         line-height: 24px;
+        margin-bottom: 1rem !important;
     }
 
     .border-rotate {
@@ -112,8 +77,34 @@ img {
         .xem-them {
             color: $mainColor;
         }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .tintuc-title {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and(max-width:480px) {
+    .tintuc-title {
+        font-size: 20px !important;
+        padding: auto 15px !important;
     }
 
+    .tintuc-img {
+        height: 200px !important;
+        object-fit: cover !important;
+
+        img {
+            height: 200px !important;
+            object-fit: cover;
+        }
+    }
 }
 
 @media only screen and(max-width:992px) {
@@ -123,7 +114,7 @@ img {
 }
 
 .cam-nang {
-    margin-top: 60px;
+    margin-top: 40px;
 
     .card-title {
         font-size: 19px;
@@ -135,11 +126,13 @@ img {
 
     .card-text {
         line-height: 24px;
+        margin-bottom: 1rem !important;
+
     }
 }
 
 .chia-se {
-    margin-top: 60px;
+    margin-top: 40px;
 
     .card-img-top {
         position: relative;
@@ -164,6 +157,8 @@ img {
     .card-text {
         font-size: 13px;
         line-height: 19px;
+        margin-bottom: 1rem !important;
+
     }
 
     .icon-clock {
