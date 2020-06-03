@@ -9,20 +9,26 @@ body {
     font-size: 16px;
 }
 
-.nav-header {
+.navbar-expand {
     height: 72px;
+    background-color: #fff;
 
-    .nav-item {
-        padding-right: 15px !important;
+    .logo {
+        height: 30px;
     }
 
-    .form-search {
-        width: 300px !important;
+
+
+}
+
+@media only screen and(max-width: 400px) {
+    .navbar-expand {
+        height: 50px !important;
     }
 }
 
 @media only screen and(max-width: 1024px) {
-    .nav-header {
+    .navbar-expand {
         .nav-link {
             padding: 10px !important;
         }
@@ -30,48 +36,31 @@ body {
 }
 
 .banner {
-    background-image: url("../img/banner.png");
-    background-repeat: no-repeat;
-    height: 650px;
-    width: 100%;
-
+    display: flex;
+    position: relative;
 
     .banner-title {
         width: 568px;
         height: 135px;
-
-
         /* Display/Desktop */
 
         font-style: normal;
         font-weight: 600;
         font-size: 56px;
         line-height: 67px;
-        /* or 120% */
 
         display: flex;
         align-items: center !important;
         letter-spacing: -1.2px;
     }
 
-    .banner-info {
-        width: 668px;
-        height: 65px;
-        background-color: #fff;
-        padding: 8px;
 
-        .info-time {
-            width: 476px;
-            height: 48px;
-            background: #F2F2F2;
-            border-radius: 2px;
-        }
 
-        .info-button {
-            height: 40px;
-            background: $mainColor;
-            border-radius: 2px;
-        }
+    .pharmacy {
+        display: flex;
+        position: absolute !important;
+        right: 140px !important;
+        top: 560px !important;
     }
 
 }
@@ -127,10 +116,9 @@ img {
 
 }
 
-@media only screen and(max-width:768px) {
+@media only screen and(max-width:992px) {
     .border-line {
         display: none;
-
     }
 }
 
