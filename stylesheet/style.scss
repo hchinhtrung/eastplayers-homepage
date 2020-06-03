@@ -31,10 +31,49 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     /* Set up proportionate scaling */
     width: 100% !important;
     height: 620px;
+
+    .banner-title {
+        color: $textGray;
+        font-weight: 600;
+        font-size: 56px !important;
+    }
+
+    .see-more {
+        width: 668px;
+        height: 65px;
+        background-color: #fff;
+        padding: 8.5px 8px 8px 8.5px;
+
+        .block-time {
+            width: 476px;
+            height: 48px;
+            background-color: #f2f2f2;
+            border-radius: 2px;
+
+            div {
+                line-height: 48px;
+
+                svg {
+                    color: $mainColor;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .button-seemore {
+            width: 168px;
+            height: 48px;
+            background-color: $mainColor;
+            color: #fff;
+
+            &:hover {
+                color: #fff !important;
+            }
+        }
+    }
 }
 
 
@@ -221,37 +260,5 @@ footer {
     .icon-contact {
         font-size: 25px;
         color: $mainColor;
-    }
-}
-
-.see-more {
-    width: 668px;
-    height: 65px;
-    background-color: #fff;
-    padding: 8.5px 8px 8px 8.5px;
-
-    .block-time {
-        width: 476px;
-        height: 48px;
-        background-color: #f2f2f2;
-        border-radius: 2px;
-        div{
-            line-height: 48px;
-            svg{
-                color: $mainColor;
-                font-size: 20px;
-            }
-        }
-    }
-
-    .button-seemore {
-        width: 168px;
-        height: 48px;
-        background-color: $mainColor;
-        color: #fff;
-
-        &:hover {
-            color: #fff !important;
-        }
     }
 }

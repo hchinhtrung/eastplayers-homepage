@@ -23,6 +23,46 @@ body {
   height: 620px;
 }
 
+.banner .banner-title {
+  color: #333333;
+  font-weight: 600;
+  font-size: 56px !important;
+}
+
+.banner .see-more {
+  width: 668px;
+  height: 65px;
+  background-color: #fff;
+  padding: 8.5px 8px 8px 8.5px;
+}
+
+.banner .see-more .block-time {
+  width: 476px;
+  height: 48px;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+}
+
+.banner .see-more .block-time div {
+  line-height: 48px;
+}
+
+.banner .see-more .block-time div svg {
+  color: #ea650f;
+  font-size: 20px;
+}
+
+.banner .see-more .button-seemore {
+  width: 168px;
+  height: 48px;
+  background-color: #ea650f;
+  color: #fff;
+}
+
+.banner .see-more .button-seemore:hover {
+  color: #fff !important;
+}
+
 a {
   text-decoration: none !important;
   color: #333333 !important;
@@ -199,39 +239,5 @@ footer .copyright {
 footer .icon-contact {
   font-size: 25px;
   color: #ea650f;
-}
-
-.see-more {
-  width: 668px;
-  height: 65px;
-  background-color: #fff;
-  padding: 8.5px 8px 8px 8.5px;
-}
-
-.see-more .block-time {
-  width: 476px;
-  height: 48px;
-  background-color: #f2f2f2;
-  border-radius: 2px;
-}
-
-.see-more .block-time div {
-  line-height: 48px;
-}
-
-.see-more .block-time div svg {
-  color: #ea650f;
-  font-size: 20px;
-}
-
-.see-more .button-seemore {
-  width: 168px;
-  height: 48px;
-  background-color: #ea650f;
-  color: #fff;
-}
-
-.see-more .button-seemore:hover {
-  color: #fff !important;
 }
 /*# sourceMappingURL=style.css.map */
