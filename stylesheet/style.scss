@@ -81,17 +81,22 @@ img {
         img {
             width: 100%;
         }
+
+        .tin-tuc {
+            font-size: 15px !important;
+        }
     }
 }
 
 @media only screen and(max-width:768px) {
     .tintuc-title {
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
 }
 
 @media only screen and(max-width:480px) {
     .tintuc-title {
+        margin-top: 10px;
         font-size: 18px !important;
         padding: auto 15px !important;
     }
