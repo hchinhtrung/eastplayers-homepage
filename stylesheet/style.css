@@ -1,65 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap");
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
 body {
   font-family: 'Barlow', sans-serif !important;
   font-size: 16px;
-}
-
-.navbar-expand {
-  height: 72px;
-  background-color: #612222;
-}
-
-@media only screen and (max-width: 1024px) {
-  .navbar-expand .nav-link {
-    padding: 10px !important;
-  }
-}
-
-.banner {
-  background-image: url("../img/Group 1.png") !important;
-  background-size: cover;
-  /* Set up proportionate scaling */
-  width: 100% !important;
-  height: 620px;
-}
-
-.banner .banner-title {
-  color: #333333;
-  font-weight: 600;
-  font-size: 56px !important;
-}
-
-.banner .see-more {
-  width: 668px;
-  background-color: #fff;
-  padding: 8.5px 8px 8px 8.5px;
-}
-
-.banner .see-more .block-time {
-  width: 476px;
-  height: 48px;
-  background-color: #f2f2f2;
-  border-radius: 2px;
-}
-
-.banner .see-more .block-time div {
-  line-height: 48px;
-}
-
-.banner .see-more .block-time div svg {
-  color: #ea650f;
-  font-size: 20px;
-}
-
-.banner .see-more .button-seemore {
-  width: 168px;
-  height: 48px;
-  background-color: #ea650f;
-  color: #fff;
-}
-
-.banner .see-more .button-seemore:hover {
-  color: #fff !important;
 }
 
 a {
@@ -82,6 +30,98 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 40px;
+}
+
+.navbar-expand {
+  height: 72px;
+  background-color: #612222;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-expand .nav-link {
+    padding: 10px !important;
+  }
+}
+
+.banner {
+  background-image: url("../img/Group 1.png") !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* Set up proportionate scaling */
+  height: 800px;
+}
+
+.banner .banner-title {
+  color: #333333;
+  font-weight: 600;
+  font-size: 52px !important;
+  margin-top: 250px;
+}
+
+.banner .see-more {
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.banner .see-more .see-more-padding {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.banner .see-more .see-more-block {
+  height: 48px;
+  line-height: 48px;
+  border-radius: 2px;
+  background-color: #f2f2f2;
+}
+
+.banner .see-more .see-more-block div svg {
+  color: #ea650f;
+  font-size: 22px;
+}
+
+.banner .see-more .see-more-button button {
+  height: 48px;
+  color: #fff;
+  background-color: #ea650f;
+}
+
+.banner .see-more .see-more-button button:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 500px;
+  }
+  .banner .banner-title {
+    margin-top: 140px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+  .banner .see-more .see-more-button {
+    margin: auto 0;
+    margin-top: 5px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    height: 260px;
+  }
+  .banner .banner-title {
+    line-height: 24px;
+    font-size: 24px !important;
+    margin-top: 250px;
+  }
+  .banner .see-more .see-more-button {
+    margin: auto 0;
+    margin-top: 5px;
+    padding: 0;
+  }
 }
 
 .hoi-chuyen-gia {
@@ -125,17 +165,20 @@ img {
 }
 
 @media only screen and (max-width: 480px) {
-  .tintuc-title {
+  .hoi-chuyen-gia-mobile {
+    margin-top: 220px;
+  }
+  .hoi-chuyen-gia-mobile .tintuc-title {
     margin-top: 10px;
     font-size: 18px !important;
     padding: auto 15px !important;
   }
-  .tintuc-img {
+  .hoi-chuyen-gia-mobile .tintuc-img {
     height: 200px !important;
     -o-object-fit: cover !important;
        object-fit: cover !important;
   }
-  .tintuc-img img {
+  .hoi-chuyen-gia-mobile .tintuc-img img {
     height: 200px !important;
     -o-object-fit: cover;
        object-fit: cover;
@@ -197,6 +240,26 @@ img {
 
 .chia-se .icon-clock {
   color: #E0E0E0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .chia-se .icon-play {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 155px;
+    top: 78px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .chia-se .icon-play {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 170px;
+    top: 85px;
+  }
 }
 
 footer {

@@ -3,78 +3,16 @@ $textGray: #333333;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
 
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
 body {
     font-family: 'Barlow', sans-serif !important;
     font-size: 16px;
 }
-
-.navbar-expand {
-    height: 72px;
-    background-color: rgb(97, 34, 34);
-
-}
-
-
-@media only screen and(max-width: 1024px) {
-    .navbar-expand {
-        .nav-link {
-            padding: 10px !important;
-        }
-    }
-}
-
-// banner
-.banner {
-
-    background-image: url("../img/Group 1.png") !important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /* Set up proportionate scaling */
-    width: 100% !important;
-    height: 620px;
-
-    .banner-title {
-        color: $textGray;
-        font-weight: 600;
-        font-size: 56px !important;
-    }
-
-    .see-more {
-        width: 668px;
-        background-color: #fff;
-        padding: 8.5px 8px 8px 8.5px;
-
-        .block-time {
-            width: 476px;
-            height: 48px;
-            background-color: #f2f2f2;
-            border-radius: 2px;
-
-            div {
-                line-height: 48px;
-
-                svg {
-                    color: $mainColor;
-                    font-size: 20px;
-                }
-            }
-        }
-
-        .button-seemore {
-            width: 168px;
-            height: 48px;
-            background-color: $mainColor;
-            color: #fff;
-
-            &:hover {
-                color: #fff !important;
-            }
-        }
-    }
-}
-
 
 // default
 a {
@@ -99,6 +37,119 @@ img {
     line-height: 40px;
 }
 
+// navbar header
+.navbar-expand {
+    height: 72px;
+    background-color: rgb(97, 34, 34);
+
+}
+
+@media only screen and(max-width: 1024px) {
+    .navbar-expand {
+        .nav-link {
+            padding: 10px !important;
+        }
+    }
+}
+
+// banner
+.banner {
+    background-image: url("../img/Group 1.png") !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* Set up proportionate scaling */
+    height: 800px;
+
+    .banner-title {
+        color: $textGray;
+        font-weight: 600;
+        font-size: 52px !important;
+        margin-top: 250px;
+    }
+
+    .see-more {
+        border-radius: 2px;
+        background-color: #fff;
+        padding: 8px;
+        font-weight: bold;
+
+        .see-more-padding {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .see-more-block {
+            height: 48px;
+            line-height: 48px;
+            border-radius: 2px;
+            background-color: #f2f2f2;
+
+            div {
+
+                svg {
+                    color: $mainColor;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .see-more-button {
+            button {
+                height: 48px;
+                color: #fff;
+                background-color: $mainColor;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and(max-width:768px) {
+    .banner {
+        height: 500px;
+
+        .banner-title {
+            margin-top: 140px;
+            line-height: 45px;
+            margin-bottom: 10px;
+        }
+
+        .see-more {
+            .see-more-button {
+                margin: auto 0;
+                margin-top: 5px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:480px) {
+    .banner {
+        height: 260px;
+
+        .banner-title {
+            line-height: 24px;
+            font-size: 24px !important;
+            margin-top: 250px;
+        }
+
+        .see-more {
+            .see-more-button {
+                margin: auto 0;
+                margin-top: 5px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+// hoi chuyen gia
 .hoi-chuyen-gia {
     margin-top: 20px;
 
@@ -142,19 +193,23 @@ img {
 }
 
 @media only screen and(max-width:480px) {
-    .tintuc-title {
-        margin-top: 10px;
-        font-size: 18px !important;
-        padding: auto 15px !important;
-    }
+    .hoi-chuyen-gia-mobile {
+        margin-top: 220px;
 
-    .tintuc-img {
-        height: 200px !important;
-        object-fit: cover !important;
+        .tintuc-title {
+            margin-top: 10px;
+            font-size: 18px !important;
+            padding: auto 15px !important;
+        }
 
-        img {
+        .tintuc-img {
             height: 200px !important;
-            object-fit: cover;
+            object-fit: cover !important;
+
+            img {
+                height: 200px !important;
+                object-fit: cover;
+            }
         }
     }
 }
@@ -165,6 +220,7 @@ img {
     }
 }
 
+// cam nang
 .cam-nang {
     margin-top: 40px;
 
@@ -183,6 +239,8 @@ img {
     }
 }
 
+
+// chia se
 .chia-se {
     margin-top: 40px;
 
@@ -218,6 +276,26 @@ img {
     }
 }
 
+@media only screen and(max-width:768px) {
+    .chia-se .icon-play {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 155px;
+        top: 78px;
+    }
+}
+@media only screen and(max-width:480px) {
+    .chia-se .icon-play {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 170px;
+        top: 85px;
+    }
+}
+
+// footer
 footer {
     background-color: #e5e5e5;
     margin-top: 100px;
