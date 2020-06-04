@@ -58,13 +58,14 @@ img {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* Set up proportionate scaling */
-    height: 800px;
+    height: 900px;
 
     .banner-title {
         color: $textGray;
         font-weight: 600;
         font-size: 52px !important;
-        margin-top: 250px;
+        line-height: 50px;
+        margin-top: 300px;
     }
 
     .see-more {
@@ -72,6 +73,7 @@ img {
         background-color: #fff;
         padding: 8px;
         font-weight: bold;
+        margin-top: 30px;
 
         .see-more-padding {
             padding-left: 8px;
@@ -172,6 +174,8 @@ img {
     }
 
     .tin-tuc {
+        font-size: 15px !important;
+
         .xem-them {
             color: $mainColor;
         }
@@ -180,8 +184,8 @@ img {
             width: 100%;
         }
 
-        .tin-tuc {
-            font-size: 15px !important;
+        .tintuc-title {
+            padding: 5px 0 0 0;
         }
     }
 }
@@ -189,17 +193,17 @@ img {
 @media only screen and(max-width:768px) {
     .tintuc-title {
         font-size: 20px !important;
+        padding: 15px;
     }
 }
 
 @media only screen and(max-width:480px) {
     .hoi-chuyen-gia-mobile {
-        margin-top: 220px;
+        margin-top: 250px;
 
         .tintuc-title {
             margin-top: 10px;
             font-size: 18px !important;
-            padding: auto 15px !important;
         }
 
         .tintuc-img {
@@ -211,6 +215,10 @@ img {
                 object-fit: cover;
             }
         }
+    }
+
+    .tintuc-title {
+        padding: 15px !important;
     }
 }
 
@@ -285,6 +293,7 @@ img {
         top: 78px;
     }
 }
+
 @media only screen and(max-width:480px) {
     .chia-se .icon-play {
         position: absolute;
@@ -302,12 +311,6 @@ footer {
     margin-bottom: 0;
     height: auto;
     padding: 50px 0;
-
-
-    .logo-footer {
-        width: 130px;
-        height: auto;
-    }
 
     .social-media {
         a {

@@ -48,14 +48,15 @@ img {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* Set up proportionate scaling */
-  height: 800px;
+  height: 900px;
 }
 
 .banner .banner-title {
   color: #333333;
   font-weight: 600;
   font-size: 52px !important;
-  margin-top: 250px;
+  line-height: 50px;
+  margin-top: 300px;
 }
 
 .banner .see-more {
@@ -63,6 +64,7 @@ img {
   background-color: #fff;
   padding: 8px;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 .banner .see-more .see-more-padding {
@@ -146,6 +148,10 @@ img {
   border: 1px solid #aaa;
 }
 
+.hoi-chuyen-gia .tin-tuc {
+  font-size: 15px !important;
+}
+
 .hoi-chuyen-gia .tin-tuc .xem-them {
   color: #ea650f;
 }
@@ -154,24 +160,24 @@ img {
   width: 100%;
 }
 
-.hoi-chuyen-gia .tin-tuc .tin-tuc {
-  font-size: 15px !important;
+.hoi-chuyen-gia .tin-tuc .tintuc-title {
+  padding: 5px 0 0 0;
 }
 
 @media only screen and (max-width: 768px) {
   .tintuc-title {
     font-size: 20px !important;
+    padding: 15px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .hoi-chuyen-gia-mobile {
-    margin-top: 220px;
+    margin-top: 250px;
   }
   .hoi-chuyen-gia-mobile .tintuc-title {
     margin-top: 10px;
     font-size: 18px !important;
-    padding: auto 15px !important;
   }
   .hoi-chuyen-gia-mobile .tintuc-img {
     height: 200px !important;
@@ -182,6 +188,9 @@ img {
     height: 200px !important;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .tintuc-title {
+    padding: 15px !important;
   }
 }
 
@@ -268,11 +277,6 @@ footer {
   margin-bottom: 0;
   height: auto;
   padding: 50px 0;
-}
-
-footer .logo-footer {
-  width: 130px;
-  height: auto;
 }
 
 footer .social-media a {
